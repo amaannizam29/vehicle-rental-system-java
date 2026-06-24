@@ -1,4 +1,3 @@
-// A Motorcycle is a Vehicle with an extra field: whether it has a sidecar.
 public class Motorcycle extends Vehicle {
 
     boolean hasSidecar;
