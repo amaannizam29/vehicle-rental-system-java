@@ -1,6 +1,4 @@
-// The RentalShop holds all the data and contains the main logic:
-// storing vehicles and customers, renting, returning and listing.
-// Arrays have a fixed size and a counter keeps track of how many are used.
+
 public class RentalShop {
 
     Vehicle[] vehicles;
@@ -32,7 +30,6 @@ public class RentalShop {
         customerCount++;
     }
 
-    // Prints only the vehicles that are currently available.
     public void showAvailableVehicles() {
         System.out.println("--- Available Vehicles ---");
         int shown = 0;
@@ -64,7 +61,6 @@ public class RentalShop {
         }
     }
 
-    // Searches the vehicle array by id. Returns null if not found.
     public Vehicle findVehicleById(int id) {
         for (int i = 0; i < vehicleCount; i++) {
             if (vehicles[i].id == id) {
@@ -83,7 +79,6 @@ public class RentalShop {
         return null;
     }
 
-    // Creates a rental: checks everything, then makes the agreement.
     public void rentVehicle(int vehicleId, int customerId, int days) {
         Vehicle v = findVehicleById(vehicleId);
         Customer c = findCustomerById(customerId);
@@ -105,7 +100,7 @@ public class RentalShop {
         agreements[agreementCount] = a;
         agreementCount++;
         nextAgreementId++;
-        v.available = false;   // the vehicle is now taken
+        v.available = false;  
 
         System.out.println("Rental created:");
         a.displayInfo();
