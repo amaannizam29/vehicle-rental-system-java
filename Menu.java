@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-// The Menu handles all user interaction through the console.
-// It reads the user's choice and calls the matching RentalShop method.
+
 public class Menu {
 
     Scanner scanner;
@@ -13,7 +12,7 @@ public class Menu {
     }
 
     public void run() {
-        loadSampleData();   // fill the shop so the demo has content
+        loadSampleData();  
 
         int choice = -1;
         while (choice != 0) {
@@ -89,7 +88,6 @@ public class Menu {
         shop.returnVehicle(vId);
     }
 
-    // Some starting data so the program is not empty on launch.
     public void loadSampleData() {
         shop.addVehicle(new Car(1, "VW-Golf", 45.0, 5));
         shop.addVehicle(new Car(2, "BMW-3Series", 70.0, 4));
