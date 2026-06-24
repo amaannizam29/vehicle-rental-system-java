@@ -1,4 +1,3 @@
-// A customer who can rent vehicles.
 public class Customer {
 
     int id;
