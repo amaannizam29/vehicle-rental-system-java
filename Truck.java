@@ -1,4 +1,3 @@
-// A Truck is a Vehicle with an extra field: cargo capacity in tons.
 public class Truck extends Vehicle {
 
     double cargoCapacity;
