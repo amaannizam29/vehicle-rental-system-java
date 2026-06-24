@@ -1,10 +1,9 @@
-// A rental agreement links one Vehicle with one Customer for a number of days.
-// It stores the total price, which it gets from the CostCalculator.
+
 public class RentalAgreement {
 
     int agreementId;
-    Vehicle vehicle;       // the rented vehicle (object inside an object)
-    Customer customer;     // the customer who rents it
+    Vehicle vehicle;       
+    Customer customer;     
     int days;
     double totalCost;
 
