@@ -100,8 +100,7 @@ on a `Vehicle` reference, and Java automatically runs the `Car`, `Truck` or
 
 ## 5. UML Class Diagram
 
-> Source file: `diagram_class.mmd`. To turn it into an image for slides, paste the
-> contents into https://mermaid.live and export as PNG/SVG.
+> Source file: `diagram_class.mmd`.
 
 ```mermaid
 classDiagram
@@ -176,7 +175,7 @@ classDiagram
 
 ## 6. Use Case Flowchart — "Rent a Vehicle"
 
-> Source file: `diagram_rent_flowchart.mmd` (also exportable at mermaid.live).
+> Source file: `diagram_rent_flowchart.mmd`.
 
 ```mermaid
 flowchart TD
