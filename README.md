@@ -42,8 +42,9 @@ The design uses the main object-oriented relationships:
 
 - Inheritance: Car, Truck, and Motorcycle are types of Vehicle.
 - Association (has-a): a RentalAgreement holds a Vehicle and a Customer.
-- Aggregation: RentalShop holds arrays of vehicles, customers, and agreements.
-- Composition: Menu owns the RentalShop it drives.
+- Aggregation: RentalShop holds arrays of vehicles and customers.
+- Composition: RentalShop creates and owns RentalAgreement objects.
+- Composition: Menu also owns the RentalShop instance it drives.
 - Dependency: RentalAgreement calls CostCalculator to get the price.
 
 When RentalShop loops over the vehicles and calls displayInfo(), each object runs its own version, so a car prints its doors and a truck prints its cargo capacity. That is polymorphism.
